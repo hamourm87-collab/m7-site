@@ -15,8 +15,8 @@
   --surface: #fff7fb;
   --surface-2: #fce7f3;
   --on-strong: #ffffff;
-  --shadow-dark: rgba(190, 24, 93, 0.16);
-  --shadow-light: rgba(255, 255, 255, 0.92);
+  --shadow-dark: rgba(157, 23, 77, 0.22);
+  --shadow-light: rgba(255, 255, 255, 0.95);
   --focus: #6d28d9;
   --radius: 1.5rem;
   --radius-sm: 1rem;
@@ -35,6 +35,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--banner-h) + var(--header-h) + 0.6rem);
 }
 
 body {
@@ -323,6 +324,56 @@ svg {
   margin-inline: auto;
 }
 
+.hero-inner {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.hero-showcase {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: 6.2rem 5.2rem;
+  gap: 0.75rem;
+}
+
+.showcase-tile {
+  border-radius: 1.4rem;
+  border: 1px solid var(--border);
+  box-shadow:
+    10px 10px 20px var(--shadow-dark),
+    -8px -8px 16px var(--shadow-light);
+}
+
+.tile-a {
+  grid-row: 1 / 3;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.7), transparent 42%),
+    linear-gradient(160deg, #f9a8d4, #ec4899 58%, #8b5cf6);
+}
+
+.tile-b {
+  background:
+    radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.55), transparent 46%),
+    linear-gradient(145deg, #ede9fe, #8b5cf6);
+}
+
+.tile-c {
+  background:
+    radial-gradient(circle at 40% 70%, rgba(255, 255, 255, 0.45), transparent 50%),
+    linear-gradient(200deg, #fff7fb, #f472b6);
+}
+
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  background: rgba(131, 24, 67, 0.22);
+}
+
+body.nav-open {
+  overflow: hidden;
+}
+
 .hero-orb {
   position: absolute;
   border-radius: 50%;
@@ -495,7 +546,7 @@ svg {
   place-items: center;
   margin-bottom: 0.85rem;
   color: var(--primary-strong);
-  background: var(--background);
+  background: linear-gradient(180deg, #fff7fb, #fce7f3);
   box-shadow:
     inset 4px 4px 10px var(--shadow-dark),
     inset -4px -4px 10px var(--shadow-light);
@@ -717,6 +768,7 @@ svg {
 }
 
 @media (min-width: 720px) {
+  .nav-backdrop,
   .menu-toggle {
     display: none;
   }
@@ -749,6 +801,16 @@ svg {
 
   .hero {
     padding-block: 4.5rem 5rem;
+  }
+
+  .hero-inner {
+    grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.85fr);
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .hero-showcase {
+    grid-template-rows: 9.5rem 7.5rem;
   }
 }
 
@@ -791,6 +853,10 @@ svg {
 
   .header-inner {
     position: relative;
+  }
+
+  .nav.is-open {
+    z-index: 35;
   }
 
   .hero-meta {

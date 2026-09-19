@@ -172,6 +172,7 @@
   var toggle = document.getElementById("lang-toggle");
   var menuToggle = document.getElementById("menu-toggle");
   var nav = document.getElementById("site-nav");
+  var backdrop = document.getElementById("nav-backdrop");
   var waLink = document.getElementById("whatsapp-link");
 
   function currentLang() {
@@ -212,29 +213,41 @@
     }
   }
 
-  function closeMenu() {
+  function setMenu(open) {
     if (!nav || !menuToggle) {
       return;
     }
-    nav.classList.remove("is-open");
-    menuToggle.setAttribute("aria-expanded", "false");
+    nav.classList.toggle("is-open", open);
+    menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    document.body.classList.toggle("nav-open", open);
+    if (backdrop) {
+      backdrop.hidden = !open;
+    }
+  }
+
+  function closeMenu() {
+    setMenu(false);
   }
 
   if (toggle) {
     toggle.addEventListener("click", function () {
       applyLang(currentLang() === "ar" ? "en" : "ar");
+      closeMenu();
     });
   }
 
   if (menuToggle && nav) {
     menuToggle.addEventListener("click", function () {
-      var open = nav.classList.toggle("is-open");
-      menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      setMenu(!nav.classList.contains("is-open"));
     });
 
     nav.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", closeMenu);
     });
+  }
+
+  if (backdrop) {
+    backdrop.addEventListener("click", closeMenu);
   }
 
   document.addEventListener("keydown", function (event) {

@@ -20,6 +20,8 @@
     <p data-i18n="preview">معاينة للمراجعة فقط — ليست موقعاً منشوراً. لا تُرسل أي بيانات.</p>
   </div>
 
+  <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="#hero">
@@ -71,34 +73,41 @@
       <div class="hero-orb hero-orb-a" aria-hidden="true"></div>
       <div class="hero-orb hero-orb-b" aria-hidden="true"></div>
       <div class="hero-inner">
-        <p class="eyebrow" data-i18n="heroEyebrow">صالون تجميل في المنامة</p>
-        <h1 data-i18n="heroTitle">ميشيل صالون</h1>
-        <p class="hero-lead" data-i18n="heroLead">عناية ناعمة بالشعر والبشرة والمكياج في أجواء هادئة بقلب المنامة. هذه صفحة معاينة للمراجعة فقط.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#booking">
-            <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-              <path fill="currentColor" d="M12 2a8 8 0 0 0-8 8c0 5.2 7.1 11.4 7.4 11.7a.9.9 0 0 0 1.2 0C13 21.4 20 15.2 20 10a8 8 0 0 0-8-8zm0 10.6A2.6 2.6 0 1 1 12 7.4a2.6 2.6 0 0 1 0 5.2z" />
-            </svg>
-            <span data-i18n="heroCtaPrimary">احجزي عبر واتساب</span>
-          </a>
-          <a class="btn btn-ghost" href="#services">
-            <span data-i18n="heroCtaSecondary">استكشفي الخدمات</span>
-          </a>
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">صالون تجميل في المنامة</p>
+          <h1 data-i18n="heroTitle">ميشيل صالون</h1>
+          <p class="hero-lead" data-i18n="heroLead">عناية ناعمة بالشعر والبشرة والمكياج في أجواء هادئة بقلب المنامة. هذه صفحة معاينة للمراجعة فقط.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                <path fill="currentColor" d="M12 2a8 8 0 0 0-8 8c0 5.2 7.1 11.4 7.4 11.7a.9.9 0 0 0 1.2 0C13 21.4 20 15.2 20 10a8 8 0 0 0-8-8zm0 10.6A2.6 2.6 0 1 1 12 7.4a2.6 2.6 0 0 1 0 5.2z" />
+              </svg>
+              <span data-i18n="heroCtaPrimary">احجزي عبر واتساب</span>
+            </a>
+            <a class="btn btn-ghost" href="#services">
+              <span data-i18n="heroCtaSecondary">استكشفي الخدمات</span>
+            </a>
+          </div>
+          <dl class="hero-meta">
+            <div>
+              <dt data-i18n="heroMetaCityLabel">المدينة</dt>
+              <dd data-i18n="heroMetaCity">المنامة</dd>
+            </div>
+            <div>
+              <dt data-i18n="heroMetaKindLabel">النوع</dt>
+              <dd data-i18n="heroMetaKind">صالون تجميل</dd>
+            </div>
+            <div>
+              <dt data-i18n="heroMetaStatusLabel">الحالة</dt>
+              <dd data-i18n="heroMetaStatus">معاينة مراجعة</dd>
+            </div>
+          </dl>
         </div>
-        <dl class="hero-meta">
-          <div>
-            <dt data-i18n="heroMetaCityLabel">المدينة</dt>
-            <dd data-i18n="heroMetaCity">المنامة</dd>
-          </div>
-          <div>
-            <dt data-i18n="heroMetaKindLabel">النوع</dt>
-            <dd data-i18n="heroMetaKind">صالون تجميل</dd>
-          </div>
-          <div>
-            <dt data-i18n="heroMetaStatusLabel">الحالة</dt>
-            <dd data-i18n="heroMetaStatus">معاينة مراجعة</dd>
-          </div>
-        </dl>
+        <div class="hero-showcase" aria-hidden="true">
+          <div class="showcase-tile tile-a"></div>
+          <div class="showcase-tile tile-b"></div>
+          <div class="showcase-tile tile-c"></div>
+        </div>
       </div>
     </section>
 
@@ -112,42 +121,42 @@
         <ul class="card-grid">
           <li class="soft-card">
             <span class="icon-well" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M8 6c4 6 4 14 0 20M24 6c-4 6-4 14 0 20M10 16h12" /></svg>
+              <svg viewBox="0 0 32 32" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M8 6c4 6 4 14 0 20M24 6c-4 6-4 14 0 20M10 16h12" /></svg>
             </span>
             <h3 data-i18n="svc1Title">قص وتصفيف</h3>
             <p data-i18n="svc1Body">قصات حديثة وتسريح يومي أو مناسبات، بما يناسب شكل الوجه ونوع الشعر.</p>
           </li>
           <li class="soft-card">
             <span class="icon-well" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M10 24c2-8 4-14 6-16 2 2 4 8 6 16M9 24h14M13 12h6" /></svg>
+              <svg viewBox="0 0 32 32" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M10 24c2-8 4-14 6-16 2 2 4 8 6 16M9 24h14M13 12h6" /></svg>
             </span>
             <h3 data-i18n="svc2Title">صبغات ولون</h3>
             <p data-i18n="svc2Body">تجديد اللون، خصلات، وتدرجات ناعمة مع عناية تحافظ على لمعان الشعر.</p>
           </li>
           <li class="soft-card">
             <span class="icon-well" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="28" height="28"><circle cx="16" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="1.8" /><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M8 26c2-4 5-6 8-6s6 2 8 6" /></svg>
+              <svg viewBox="0 0 32 32" width="28" height="28"><circle cx="16" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="2.2" /><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M8 26c2-4 5-6 8-6s6 2 8 6" /></svg>
             </span>
             <h3 data-i18n="svc3Title">عناية ومعالجات</h3>
             <p data-i18n="svc3Body">حمام زيت، ترطيب مكثف، ومعالجات نعومة حسب حالة الشعر.</p>
           </li>
           <li class="soft-card">
             <span class="icon-well" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M8 22c4-2 12-2 16 0M10 18c1-5 4-8 6-9 2 1 5 4 6 9M16 9V7" /></svg>
+              <svg viewBox="0 0 32 32" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M8 22c4-2 12-2 16 0M10 18c1-5 4-8 6-9 2 1 5 4 6 9M16 9V7" /></svg>
             </span>
             <h3 data-i18n="svc4Title">مكياج مناسبات</h3>
             <p data-i18n="svc4Body">مكياج سهرات وعرائس بإطلالة ناعمة وثابتة تناسب الإضاءة والتصوير.</p>
           </li>
           <li class="soft-card">
             <span class="icon-well" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M9 12h14v10H9zM12 12V9h8v3M12 17h8" /></svg>
+              <svg viewBox="0 0 32 32" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M9 12h14v10H9zM12 12V9h8v3M12 17h8" /></svg>
             </span>
             <h3 data-i18n="svc5Title">أظافر وعناية يد</h3>
             <p data-i18n="svc5Body">مانيكير وباديكير وتجميل أظافر بألوان هادئة أو جريئة حسب الطلب.</p>
           </li>
           <li class="soft-card">
             <span class="icon-well" aria-hidden="true">
-              <svg viewBox="0 0 32 32" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M16 7v18M9 12c4 3 10 3 14 0M9 20c4-3 10-3 14 0" /></svg>
+              <svg viewBox="0 0 32 32" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M16 7v18M9 12c4 3 10 3 14 0M9 20c4-3 10-3 14 0" /></svg>
             </span>
             <h3 data-i18n="svc6Title">بشرة وحواجب</h3>
             <p data-i18n="svc6Body">تنظيف بشرة، حواجب، ولمسات تجميل خفيفة تُبرز الملامح دون مبالغة.</p>
