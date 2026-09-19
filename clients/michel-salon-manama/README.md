@@ -30,11 +30,14 @@ Files:
 - `index.html` — page structure (Arabic RTL primary)
 - `styles.css` — Soft UI Evolution styles
 - `app.js` — language toggle, mobile menu, WhatsApp message text
+- `assets/` — official listing photos plus branded review visuals (see `assets/SOURCES.md`)
 
 ## What to review
 
 - Arabic RTL layout (default), optional English toggle in the header
-- Mobile-first sections: Hero, Services, Gallery placeholders, Team placeholders, WhatsApp booking CTA, Location & contact
+- Mobile-first sections: Hero, Services, Gallery, Team, WhatsApp booking CTA, Location & contact
+- Hero/gallery/team use real Salonati listing photos where available, otherwise branded Soft UI visuals (no empty grey boxes)
+- WhatsApp `+973 0000 0000` and hours stay labeled **PLACEHOLDER**
 - Map control opens a search for **Michel Salon Manama**
 - Touch targets, focus rings, and `prefers-reduced-motion` are included
 

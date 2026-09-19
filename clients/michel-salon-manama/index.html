@@ -26,18 +26,7 @@
     <div class="header-inner">
       <a class="brand" href="#hero">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48" width="40" height="40" focusable="false">
-            <defs>
-              <linearGradient id="markGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#EC4899" />
-                <stop offset="100%" stop-color="#8B5CF6" />
-              </linearGradient>
-            </defs>
-            <circle cx="24" cy="24" r="22" fill="#FFF7FB" stroke="url(#markGrad)" stroke-width="2" />
-            <path d="M16 30c2-8 5-14 8-16 3 2 6 8 8 16" fill="none" stroke="url(#markGrad)" stroke-width="2.2" stroke-linecap="round" />
-            <circle cx="24" cy="16" r="2.2" fill="#8B5CF6" />
-            <path d="M20 31.5h8" stroke="#EC4899" stroke-width="2" stroke-linecap="round" />
-          </svg>
+          <img class="brand-logo" src="assets/michel-salon-logo.jpg" width="104" height="58" alt="" />
         </span>
         <span class="brand-text">
           <span class="brand-name" data-i18n="brand">ميشيل صالون</span>
@@ -104,9 +93,9 @@
           </dl>
         </div>
         <div class="hero-showcase" aria-hidden="true">
-          <div class="showcase-tile tile-a"></div>
-          <div class="showcase-tile tile-b"></div>
-          <div class="showcase-tile tile-c"></div>
+          <img class="showcase-tile tile-a" src="assets/michel-salon-interior.jpg" alt="" />
+          <img class="showcase-tile tile-b" src="assets/hero-styling-stations.png" alt="" />
+          <img class="showcase-tile tile-c" src="assets/hero-vases-detail.png" alt="" />
         </div>
       </div>
     </section>
@@ -170,31 +159,37 @@
         <header class="section-head">
           <p class="eyebrow" data-i18n="galleryEyebrow">أعمال الصالون</p>
           <h2 id="gallery-title" data-i18n="galleryTitle">المعرض</h2>
-          <p class="section-lead" data-i18n="galleryLead">صور تجريبية للتخطيط فقط. ستُستبدل بصور حقيقية بعد موافقة العميل.</p>
+          <p class="section-lead" data-i18n="galleryLead">صورة داخلية من الملف العام على Salonati، مع رسوم مراجعة بألوان الصالون. ليست معرض أعمال نهائياً.</p>
         </header>
         <ul class="gallery-grid">
-          <li class="gallery-item tone-a">
-            <span class="ph-badge" data-i18n="placeholder">عنصر نائب</span>
+          <li class="gallery-item">
+            <img src="assets/gallery-evening-style.png" alt="" data-i18n-alt="gal1Alt" />
+            <span class="ph-badge" data-i18n="photoBranded">رسم مراجعة</span>
             <span class="gallery-caption" data-i18n="gal1">تسريحة سهرة</span>
           </li>
-          <li class="gallery-item tone-b">
-            <span class="ph-badge" data-i18n="placeholder">عنصر نائب</span>
+          <li class="gallery-item">
+            <img src="assets/gallery-hair-color.png" alt="" data-i18n-alt="gal2Alt" />
+            <span class="ph-badge" data-i18n="photoBranded">رسم مراجعة</span>
             <span class="gallery-caption" data-i18n="gal2">لون وخصلات</span>
           </li>
-          <li class="gallery-item tone-c">
-            <span class="ph-badge" data-i18n="placeholder">عنصر نائب</span>
+          <li class="gallery-item">
+            <img src="assets/gallery-bridal-makeup.png" alt="" data-i18n-alt="gal3Alt" />
+            <span class="ph-badge" data-i18n="photoBranded">رسم مراجعة</span>
             <span class="gallery-caption" data-i18n="gal3">مكياج عروس</span>
           </li>
-          <li class="gallery-item tone-d">
-            <span class="ph-badge" data-i18n="placeholder">عنصر نائب</span>
+          <li class="gallery-item">
+            <img src="assets/gallery-hair-care.png" alt="" data-i18n-alt="gal4Alt" />
+            <span class="ph-badge" data-i18n="photoBranded">رسم مراجعة</span>
             <span class="gallery-caption" data-i18n="gal4">عناية بالشعر</span>
           </li>
-          <li class="gallery-item tone-e">
-            <span class="ph-badge" data-i18n="placeholder">عنصر نائب</span>
+          <li class="gallery-item">
+            <img src="assets/gallery-nails.png" alt="" data-i18n-alt="gal5Alt" />
+            <span class="ph-badge" data-i18n="photoBranded">رسم مراجعة</span>
             <span class="gallery-caption" data-i18n="gal5">أظافر</span>
           </li>
-          <li class="gallery-item tone-f">
-            <span class="ph-badge" data-i18n="placeholder">عنصر نائب</span>
+          <li class="gallery-item">
+            <img src="assets/michel-salon-interior.jpg" alt="" data-i18n-alt="gal6Alt" />
+            <span class="ph-badge" data-i18n="photoOfficial">صورة من الملف العام</span>
             <span class="gallery-caption" data-i18n="gal6">تفاصيل الصالون</span>
           </li>
         </ul>
@@ -206,26 +201,26 @@
         <header class="section-head">
           <p class="eyebrow" data-i18n="teamEyebrow">من يستقبلكِ</p>
           <h2 id="team-title" data-i18n="teamTitle">الفريق</h2>
-          <p class="section-lead" data-i18n="teamLead">أسماء وصور الفريق عناصر نائبة للمراجعة. تُحدَّث بعد تأكيد الصالون.</p>
+          <p class="section-lead" data-i18n="teamLead">الأسماء ورسوم الفريق عناصر نائبة للمراجعة. تُحدَّث بعد تأكيد الصالون.</p>
         </header>
         <ul class="team-grid">
           <li class="soft-card team-card">
-            <span class="avatar av-1" aria-hidden="true">م</span>
+            <img class="avatar" src="assets/team-director.png" width="96" height="96" alt="" data-i18n-alt="tm1Alt" />
             <h3 data-i18n="tm1Name">ميشيل</h3>
             <p class="role" data-i18n="tm1Role">مديرة الصالون — عنصر نائب</p>
           </li>
           <li class="soft-card team-card">
-            <span class="avatar av-2" aria-hidden="true">ل</span>
+            <img class="avatar" src="assets/team-stylist.png" width="96" height="96" alt="" data-i18n-alt="tm2Alt" />
             <h3 data-i18n="tm2Name">ليلى</h3>
             <p class="role" data-i18n="tm2Role">مصففة شعر — عنصر نائب</p>
           </li>
           <li class="soft-card team-card">
-            <span class="avatar av-3" aria-hidden="true">ن</span>
+            <img class="avatar" src="assets/team-makeup.png" width="96" height="96" alt="" data-i18n-alt="tm3Alt" />
             <h3 data-i18n="tm3Name">نور</h3>
             <p class="role" data-i18n="tm3Role">مكياج وبشرة — عنصر نائب</p>
           </li>
           <li class="soft-card team-card">
-            <span class="avatar av-4" aria-hidden="true">س</span>
+            <img class="avatar" src="assets/team-nails.png" width="96" height="96" alt="" data-i18n-alt="tm4Alt" />
             <h3 data-i18n="tm4Name">سارة</h3>
             <p class="role" data-i18n="tm4Role">أظافر — عنصر نائب</p>
           </li>
@@ -296,7 +291,8 @@
           </article>
         </div>
         <a class="map-panel" href="https://www.google.com/maps/search/?api=1&query=Michel+Salon+Manama" rel="noopener noreferrer" target="_blank">
-          <span class="map-art" aria-hidden="true">
+          <span class="map-art">
+            <img src="assets/michel-salon-interior.jpg" alt="" />
             <span class="map-pin"></span>
           </span>
           <span class="map-copy">
