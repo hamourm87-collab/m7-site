@@ -36,7 +36,7 @@ Files:
 
 - Arabic RTL layout (default), optional English toggle in the header
 - Mobile-first sections: Hero, Services, Gallery, Team, WhatsApp booking CTA, Location & contact
-- Hero/gallery/team use real Salonati listing photos where available, otherwise branded Soft UI visuals (no empty grey boxes)
+- Hero/gallery use real Google Maps, Salonati, and Fresha listing photos; team uses branded illustrations because Maps has no staff portraits
 - WhatsApp `+973 0000 0000` and hours stay labeled **PLACEHOLDER**
 - Map control opens a search for **Michel Salon Manama**
 - Touch targets, focus rings, and `prefers-reduced-motion` are included
