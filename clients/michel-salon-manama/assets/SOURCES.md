@@ -1,30 +1,41 @@
 # Image sources (review-only)
 
-## Real official listing photos
+## Real official listing photos (5)
 
-From the public Salonati profile for Michel Salon, Manama:
+### Salonati
+https://www.salonati.com/bh/branch/michel-salon-manama-manama-rd-1722-816
 
 - `michel-salon-logo.jpg` — listing logo (“Michel Hair & Beauty Salon Since 1991”)
-- `michel-salon-interior.jpg` — listing cover / interior (wash stations, magenta lighting)
+- `michel-salon-interior.jpg` — listing cover / wash-station interior
 
-Source: https://www.salonati.com/bh/branch/michel-salon-manama-manama-rd-1722-816
+### Google Maps
+Place: Michel Salon, Block 371 / 1565 Road 1722, Manama (Diplomat Radisson Blu lobby)
 
-Google Maps, Fresha venue pages, Instagram/Threads (@michelsalon), and Arabia Weddings did not yield additional high-quality downloadable salon photos for this preview. Info Bahrain listing screenshot files returned 404.
+- `maps-interior-logo-wall.jpg` — gold Michel logo wall, chairs, product shelves
+- `maps-staff-at-work.jpg` — stylists at work (public Maps gallery)
+- `maps-exterior-billboard.jpg` — night billboard at the Diplomat hotel
 
-No exterior photo was available.
+Queued `uploads/maps1.jpg`, `maps2.jpg`, and `fresha.jpg` were not present on disk in this environment. Maps stills above were downloaded from the public Google Maps photo URLs. Fresha lead image was skipped (generic stock, lower priority).
+
+No dedicated team portraits were in the Maps gallery.
 
 ## Generated branded Soft UI visuals
 
-Created for this review preview in the rose/lavender palette. They are **not** photographs of Michel Salon staff or client work:
+Used in the current layout:
 
-- `hero-styling-stations.png`
-- `hero-vases-detail.png`
 - `gallery-evening-style.png`
-- `gallery-hair-color.png`
-- `gallery-bridal-makeup.png`
-- `gallery-hair-care.png`
 - `gallery-nails.png`
 - `team-director.png`
 - `team-stylist.png`
 - `team-makeup.png`
 - `team-nails.png`
+
+Unused extras kept for later review swaps:
+
+- `gallery-hair-color.png`
+- `gallery-bridal-makeup.png`
+- `gallery-hair-care.png`
+- `hero-styling-stations.png`
+- `hero-vases-detail.png`
+
+These generated files are **not** photographs of Michel Salon staff or client work.
